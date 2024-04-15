@@ -2,19 +2,19 @@
 
 [ext_resource type="Script" path="res://script/beach.gd" id="1_gajgq"]
 [ext_resource type="PackedScene" uid="uid://ccqixd71au2xk" path="res://scenes/test_player.tscn" id="2_uue36"]
-[ext_resource type="Texture2D" uid="uid://0qv7fe44tkmt" path="res://tilesets/forest-tileset/PNG/Objects.png" id="3_j281v"]
-[ext_resource type="Texture2D" uid="uid://cyq8l66rcd18p" path="res://tilesets/forest-tileset/PNG/spots_lianas.png" id="4_yvm8c"]
-[ext_resource type="Texture2D" uid="uid://gystm2p42fpi" path="res://tilesets/grassland-tileset/PNG/Details.png" id="5_tnwcn"]
-[ext_resource type="Texture2D" uid="uid://vjfme3m3f5d3" path="res://tilesets/grassland-tileset/PNG/ground_grasss.png" id="6_fbhxc"]
-[ext_resource type="Texture2D" uid="uid://dvbfq1rpnl08v" path="res://tilesets/grassland-tileset/PNG/Trees_rocks.png" id="7_87nu3"]
-[ext_resource type="Texture2D" uid="uid://dtghp8xrum4a6" path="res://tilesets/grassland-tileset/PNG/Water_coasts.png" id="8_ic5xa"]
-[ext_resource type="Texture2D" uid="uid://pbscw12pcfj8" path="res://tilesets/grassland-tileset/PNG/water_detilazation.png" id="9_oa6i4"]
-[ext_resource type="Texture2D" uid="uid://f441cuo15woh" path="res://tilesets/grassland-tileset/PNG/water_detilazation_v2.png" id="10_icfi4"]
-[ext_resource type="Texture2D" uid="uid://pakdvchj1dom" path="res://tilesets/rockyLand-tileset/PNG/Water_coasts.png" id="11_mu4k2"]
-[ext_resource type="Texture2D" uid="uid://f4mnp4507fgh" path="res://tilesets/rockyLand-tileset/PNG/waterfall.png" id="12_abwcr"]
-[ext_resource type="Texture2D" uid="uid://debuoqwa3juyu" path="res://tilesets/forest-tileset/PNG/Ground_grass.png" id="13_ghbvl"]
-[ext_resource type="Texture2D" uid="uid://c8tft22opwea5" path="res://tilesets/rockyLand-tileset/PNG/Water_under_objects.png" id="14_4i5ek"]
-[ext_resource type="Texture2D" uid="uid://cfccdrhyr2byj" path="res://tilesets/forest-tileset/PNG/Water_lilis.png" id="15_a300y"]
+[ext_resource type="Texture2D" uid="uid://6lntl1rdfnqg" path="res://tilesets/forest-tileset/PNG/Objects.png" id="3_j281v"]
+[ext_resource type="Texture2D" uid="uid://bw1pbieuf3nk2" path="res://tilesets/forest-tileset/PNG/spots_lianas.png" id="4_yvm8c"]
+[ext_resource type="Texture2D" uid="uid://c0dmxjd8y368w" path="res://tilesets/grassland-tileset/PNG/Details.png" id="5_tnwcn"]
+[ext_resource type="Texture2D" uid="uid://dyewr6nila3nb" path="res://tilesets/grassland-tileset/PNG/ground_grasss.png" id="6_fbhxc"]
+[ext_resource type="Texture2D" uid="uid://c33viyqiya5on" path="res://tilesets/grassland-tileset/PNG/Trees_rocks.png" id="7_87nu3"]
+[ext_resource type="Texture2D" uid="uid://rquo8ng0hdif" path="res://tilesets/grassland-tileset/PNG/Water_coasts.png" id="8_ic5xa"]
+[ext_resource type="Texture2D" uid="uid://37np7fr0tvyk" path="res://tilesets/grassland-tileset/PNG/water_detilazation.png" id="9_oa6i4"]
+[ext_resource type="Texture2D" uid="uid://d033kq7xvkwca" path="res://tilesets/grassland-tileset/PNG/water_detilazation_v2.png" id="10_icfi4"]
+[ext_resource type="Texture2D" uid="uid://cpwqnu2nthkkc" path="res://tilesets/rockyLand-tileset/PNG/Water_coasts.png" id="11_mu4k2"]
+[ext_resource type="Texture2D" uid="uid://b58h7hdlddnsc" path="res://tilesets/rockyLand-tileset/PNG/waterfall.png" id="12_abwcr"]
+[ext_resource type="Texture2D" uid="uid://bl2yq3cjno4rj" path="res://tilesets/forest-tileset/PNG/Ground_grass.png" id="13_ghbvl"]
+[ext_resource type="Texture2D" uid="uid://bdlk2ccmhem1e" path="res://tilesets/rockyLand-tileset/PNG/Water_under_objects.png" id="14_4i5ek"]
+[ext_resource type="Texture2D" uid="uid://db3mj02uqcafo" path="res://tilesets/forest-tileset/PNG/Water_lilis.png" id="15_a300y"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_s3p83"]
 tile_data = PackedInt32Array(0, 65550, 25)
@@ -20281,9 +20281,6 @@ script = ExtResource("1_gajgq")
 metadata/_edit_horizontal_guides_ = [-22.0, -127.0]
 
 [node name="testPlayer" parent="." instance=ExtResource("2_uue36")]
-z_index = 2
-collision_layer = 1
-collision_mask = 1
 
 [node name="Camera2D" type="Camera2D" parent="testPlayer"]
 scale = Vector2(1.07055, 1.06979)

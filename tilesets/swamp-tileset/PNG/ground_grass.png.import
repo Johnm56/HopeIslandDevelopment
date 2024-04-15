@@ -2,15 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-<<<<<<< HEAD
-uid="uid://d0elu22oohv66"
-=======
-uid="uid://b1tun825pvm4h"
->>>>>>> 9add64083822397e6a9b93048c9866a2af75d24c
-=======
-uid="uid://cbx3kgi2ejr7c"
->>>>>>> pr/8
+uid="uid://8wrjtkeejwny"
 path="res://.godot/imported/ground_grass.png-b1b05d18c9fa60af06646407364bd92d.ctex"
 metadata={
 "vram_texture": false
