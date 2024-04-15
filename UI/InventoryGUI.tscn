@@ -1,89 +1,150 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0q5li2g5dfki"]
+[gd_scene load_steps=3 format=3 uid="uid://b0q5li2g5dfki"]
 
+[ext_resource type="Texture2D" uid="uid://d1fymj27mmr03" path="res://UI/Inventory.png" id="1_chxc5"]
 [ext_resource type="PackedScene" uid="uid://es70jopkqan0" path="res://UI/Slot.tscn" id="1_w87np"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 269.0
+offset_bottom = -502.0
+grow_vertical = 2
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
-layout_mode = 0
-offset_right = 143.0
-offset_bottom = 94.0
-
-[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -48.0
-offset_top = -20.0
-offset_right = 48.0
-offset_bottom = 20.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -5.0
+offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 2
-columns = 5
+texture = ExtResource("1_chxc5")
 
-[node name="Panel" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Control" type="Control" parent="NinePatchRect"]
+layout_mode = 1
+anchor_right = 0.7
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 31.0
+offset_right = -45.5
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.3, 1.3)
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect/Control/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/h_separation = 2
+theme_override_constants/v_separation = 2
+columns = 7
+
+[node name="Panel" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel2" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel2" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel3" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel3" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel4" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel4" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel5" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel5" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel6" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel6" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel7" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel7" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel8" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel8" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel9" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel9" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel10" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel10" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel11" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel11" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel12" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel12" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel13" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel13" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel14" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel14" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel15" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel15" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel16" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel16" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel17" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel17" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel18" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel18" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel19" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel19" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
 
-[node name="Panel20" parent="NinePatchRect/GridContainer" instance=ExtResource("1_w87np")]
+[node name="Panel20" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
 layout_mode = 2
+
+[node name="Panel21" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
+layout_mode = 2
+
+[node name="Panel22" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
+layout_mode = 2
+
+[node name="Panel23" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
+layout_mode = 2
+
+[node name="Panel24" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
+layout_mode = 2
+
+[node name="Panel25" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
+layout_mode = 2
+
+[node name="Panel26" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
+layout_mode = 2
+
+[node name="Panel27" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
+layout_mode = 2
+
+[node name="Panel28" parent="NinePatchRect/Control/VBoxContainer/GridContainer" instance=ExtResource("1_w87np")]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="NinePatchRect/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control2" type="Control" parent="NinePatchRect"]
+layout_mode = 1
+anchor_left = 0.7
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
